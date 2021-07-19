@@ -1,0 +1,53 @@
+  
+.color1 {color: #001b3b;}
+.color2 {color: #003f8a;}
+.color3 {color: #00bfff;}
+.color4 {color: #15fdc6;}
+.color5 {color: #ffffa4;}
+
+.navbar {
+    height: 56px;
+    width: 100%;
+    top: 0rem;
+    left: 0;
+    background-color:#ffffa4 ;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    /* box-sizing: border-box; */
+}
+.list {
+    margin: 0rem;
+    padding: 10px;
+    list-style: none;
+    /* display: flex;
+    flex-flow: row;
+    align-items: center; */
+    /* height: 100%; */
+}
+
+
+.list-item {
+    margin: 0px;
+    display: inline-block;
+    /* height: 100%; */
+    width: auto;
+    align-items: left;
+}
+
+.list-item a {
+    color: #001b3b;
+    font-family: 'Alegreya';
+    font-size: 20px;
+    text-decoration: none;
+    height: 100%;
+    padding: 5px 20px 5px 20px;
+    border-bottom: 10px solid transparent;
+}
+
+.list-item a:hover,
+.list-item a.active {
+    background-color: #003f8a;
+    color: #ffffa4;
+}

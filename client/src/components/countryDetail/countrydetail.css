@@ -1,0 +1,58 @@
+.color1 {color: #001b3b;}
+.color2 {color: #003f8a;}
+.color3 {color: #00bfff;}
+.color4 {color: #15fdc6;}
+.color5 {color: #ffffa4;}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin:3px;
+}
+.details{
+    width:600px;
+    border-radius: 8px;
+    background:  rgba(0, 0, 0, 0.5);
+    padding:30 px;
+    margin:auto;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffa4;
+    font-size: 30px;
+    
+    /* column-count: 2; */
+}
+
+.details img{
+    width:600px;
+    height: 220px;
+    
+}
+
+.details .title{
+    color: black;
+    margin:10px;
+}
+.details .activityCard{
+    width:400px;
+    border-radius: 8px;
+    padding:30 px;
+    margin:auto;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;;
+    color: #003f8a;
+    font-size: 2rem;
+    padding: 10px;
+    
+}
+
+.details .activityCard .n{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.image{
+    width:10rem;
+    
+}
