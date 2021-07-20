@@ -9,9 +9,9 @@ import  Container  from "../Container/container";
 function renderData(countries){
   console.log(countries)
     return(
-        <div className ='container'>
+        <div className = 'container'> 
             { 
-            countries? countries.map(country=>(
+            countries ? countries.map(country=>(
                 <div key={country.id} className='countryCards'>
                   <img src={country.imageFlag} alt={country.name}></img>
                   <h4 className='nombre'><Link to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link></h4>
@@ -41,8 +41,8 @@ function Paginacion(){
   const[minPageNumberLimit, setminPageNumberLimit]=useState(0)
 
 
-  const pages=[];
-  for(let i=1; i<=Math.ceil(countries.length/countriesPerPage); i++){
+  const pages = [];
+  for(let i=1; i <= Math.ceil(countries.length/countriesPerPage); i++){
       pages.push(i)
   }
 

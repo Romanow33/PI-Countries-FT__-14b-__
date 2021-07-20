@@ -57,7 +57,7 @@ export function Busqueda(props){
     e.preventDefault()
     props.getAllCountries()
     props.getByTourism(countries.inputTourism)
-
+    
   } 
 
   let handleName = (e)=> setCountries({...countries, inputName:e.target.value})
@@ -67,16 +67,14 @@ export function Busqueda(props){
 
   return(
     <>
+    
     <form className='form'><h1>Busca el País</h1><br></br>
-
+    <div className="firstForm">
         <label>Por Nombre </label>       
         <input name='name' type='text' onChange={handleName} value={countries.inputName} placeholder='¿Qué país quieres ver?'/>
-        <button  onClick={handleSubmitName}>go</button><br/>
+        <button className="button" onClick={handleSubmitName}>go</button>
 
         <label>Por Continente </label>
-      
-
-
       <select className= "select" name='continent' onChange={handleRegion} 
       value={countries.inputRegion}>
                     <option value="">¿Qué continente quieres ver?</option>
@@ -87,20 +85,20 @@ export function Busqueda(props){
                     <option value="Oceania">OCEANIA</option>
                     <option value="Polar">POLAR</option>
                 </select>
-        <button onClick={handleSubmitRegion}>go</button><br/>
+        <button className="button" onClick={handleSubmitRegion}>go</button>
 
         <label>Por Tourismo</label>
         <input name='tourism' type='text' onChange={handleTourism}
         value={countries.inputTourism} placeholder='¿Qué actividad quieres hacer?'></input>
-        <button onClick={handleByTourism}>go</button><br/>
-
-        <button><Link to={`/countries`} style={{ textDecoration: 'none', color:'#ffffa4'}}>Quitar filtros</Link></button>
+        <button className="button" onClick={handleByTourism}> go </button><br/>
+        </div>
+        <button className="button2"><Link to={`/countries`} style={{ textDecoration: 'none', color:'#ffffa4'}}>Quitar filtros</Link></button>
         
         <div className= 'formHijo'>Organiza tu Busqueda<br></br>
-          <button onClick={handleCountriesAZ}>Ordenar A/Z</button>
-          <button onClick={handleCountriesZA}>Ordenar Z/A</button>
-          <button onClick={handleCountriesInhabitansASC}>Población ASC</button> 
-          <button onClick={handleCountriesInhabitansDESC}>Población DESC</button> 
+          <button className="button2" onClick={handleCountriesAZ}>Ordenar A/Z</button>
+          <button className="button2" onClick={handleCountriesZA}>Ordenar Z/A</button>
+          <button className="button2" onClick={handleCountriesInhabitansASC}>Población ASC</button> 
+          <button className="button2" onClick={handleCountriesInhabitansDESC}>Población DESC</button> 
         </div> 
         
     </form>  

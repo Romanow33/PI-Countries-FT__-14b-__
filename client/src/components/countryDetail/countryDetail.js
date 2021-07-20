@@ -6,7 +6,7 @@ import {useParams} from 'react-router-dom';
 import './countrydetail.css'
 
 function CountryDetail(){
-    const dispatch= useDispatch();
+    const dispatch = useDispatch();
     const countryDetail= useSelector(state => state.countryDetail);
     const {id}= useParams();
     useEffect(()=>{

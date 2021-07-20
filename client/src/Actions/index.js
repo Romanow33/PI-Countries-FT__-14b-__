@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-
 export const GET_COUNTRIES = 'GET_COUNTRIES';
 export const GET_COUNTRY_DETAIL = 'GET_COUNTRY_DETAIL';
 export const FIND_COUNTRY = 'FIND_COUNTRY';
@@ -112,9 +111,9 @@ export function setCountriesByInhabitansDESC() {
         }; 
 }
 
-export function getByTourism(tourism) { 
+export function getByTourism(activities) { 
     return  { 
         type: GET_BY_TOURISM,
-        tourism  
+        activities  
         }; 
 }
