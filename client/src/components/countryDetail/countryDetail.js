@@ -37,14 +37,14 @@ function CountryDetail(){
             <label className='title'>Turismo  </label><hr></hr>
             <label>{countryDetail ? (countryDetail.activities && countryDetail.activities.map(el=>(
               <div key={el.id} className='activityCard'>
-                <label className='title' >Nombre Actividad: </label>
-                <label className='n'>{el.name}</label><br></br>
-                <label className='title'>Duración: </label>
-                <label className='n'>{el.duration}</label><br></br>
-                <label className='title'>Temporada: </label>
-                <label className='n'>{el.season}</label><br></br>
-                <label className='title'>Dificultad: </label>
-                <label className='n'>{el.dificulty}</label>
+                <li className='title' >Nombre Actividad: </li>
+                <li className='n'>{el.name}</li><br></br>
+                <li className='title'>Duración: </li>
+                <li className='n'>{el.duration}</li><br></br>
+                <li className='title'>Temporada: </li>
+                <li className='n'>{el.season}</li><br></br>
+                <li className='title'>Dificultad: </li>
+                <li className='n'>{el.dificulty}</li>
             </div>))):<h1>No encontro país</h1>}
             </label><br></br>
             

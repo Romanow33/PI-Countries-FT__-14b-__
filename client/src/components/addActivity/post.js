@@ -7,9 +7,8 @@ export async function post(input){
         method: 'POST',
         data: input,
     })
-    console.log(response)
     return response
     } catch(error){
-    console.log(error)
+    
     }
 }

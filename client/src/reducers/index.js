@@ -72,7 +72,7 @@ const initialState = {
           return{
           ...state,
           countrySearched: state.allCountries.filter((country)=>{
-                          return country.activities.some((el)=> el.activities === action.activities)})
+                          return country.activities.some((el)=> el.name === action.activities)})
           }  
     default:
       return state;
