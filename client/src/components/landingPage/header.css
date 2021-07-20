@@ -1,144 +1,76 @@
-.root{
-    display: flex ;
-    justify-content:center;
-    height: 100vh;
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url(https://i.gifer.com/origin/6f/6f3326ed779798b9f4ca3226cf5a9992.gif);
-    background-size: cover;
-    animation-direction: normal;
-}
-.appbar{
-    background:none,
-}
-.appbarWrapper{
-    width: 30%;
-    margin: 30 auto;
-}
-.appbarTitle{
-    flex-grow:1;
-}
-    
+@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji|Roboto';
 
-.icon{
-    color:#fff;
-    font-size:2rem;
+html, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif
 }
 
-.tittle2{
-    font-kerning: none;
-    color: #F4A261;
-    font-family: Arial, Helvetica, sans-serif;;
-    font-size: 3rem;
-    -webkit-text-stroke: 2px black;
+h1 {
+  padding:0;
+  margin:0;
 }
 
-.contenedor{
-    text-align:center;
-    align-items: center;  
-    margin-top: 2cm;
-    background-color: #285361;
-    padding-top: 10cm;
-    padding-bottom:0cm;
-    padding: 1cm;
-    height: 350px;
-    width: 400px;
-    background-color: rgba(17, 76, 97, 0.3);
-    border-style: inset;
-    border-radius: 40%;
-}
-.contenedor:hover{
-    background-color: rgba(17, 76, 97, 0.8)
-
+.hero-header {
+  background-image: url("../../assets/tierra.jpg");
+  width: 100%;
+  height: 100vh;
+  text-align: center;
 }
 
-
-.tittle{
-    color: #F4A261;
-    font-size: 3rem;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 1;
-    -webkit-text-stroke: 2px black;
+.header {
+  margin: 0 auto;
+  padding-top:30vh;
 }
 
-.goDown{
-    color:#000000;
-    font-size:15rem;
+.header h1 {
+  color: #2C3E50;
+  font-size: 40px;
+  font-family: 'Baloo Paaji', cursive;
+  margin-left: -50%;
+}
+h2{
+    color: #2C3E50;
+    margin-left: -45%;
 }
 
-.center-con {
-    display: flex;
-    height: 30vh;
-    align-items: center;
-    margin-left: 4cm;
+.btn {
+  height:50px;
+  width:200px;
+  display: inline-block;
+  background-color: #2C3E50;
+  margin:40px 20px;
+  border-radius: 5px;
+  border: 2px solid #ECF0F1;
+  cursor:pointer;
+  margin-left: -35%;
+  margin-top: 1%;
 }
 
-.round {
-    position: relative;
-    border: 3px solid black;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: #F4A261;
-    align-items: center;
-    
+.btn span {
+  color: #ECF0F1;
+  margin-top:15px;
+  display: block;
 }
 
-span {
-    align-items:center;
-    height: 3px;
-    margin:1px;
-    width: 30px;
-    background: black;
-    transition: 0.4s ease;
+.btn-1 {
+  background-color: transparent;
+  transition: all 300ms ease-in-out;
 }
 
-span:first-child {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    background: black;
-    left: 25%;
-    bottom: 35%;
+.btn-1:hover {
+  background-color:#2C3E50;
 }
 
-span:nth-child(2) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 35%;
+.btn-2 {
+  border-color: transparent;
+  transition: all 300ms ease-in-out;
 }
 
-span:nth-child(3) {
-    display: block;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 25%;
-    bottom: 54%;
+.btn-2:hover {
+  border-color: #ECF0F1;
 }
 
-span:nth-child(4) {
-    display: block;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 45%;
-    bottom: 54%;
+.body {
+  width:100%;
+  height:5000px;
 }
-.round:hover span:nth-child(1) {
-    transform: rotate(-135deg);
-}
-
-.round:hover span:nth-child(2) {
-    transform: rotate(135deg);
-}
-
-.round:hover span:nth-child(3) {
-    transform: rotate(225deg);
-}
-
-.round:hover span:nth-child(4) {
-    transform: rotate(-225deg);
-}
-
-

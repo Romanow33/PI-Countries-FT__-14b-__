@@ -32,8 +32,8 @@ function renderData(countries){
 function Paginacion(){
   
 
-  const[countries, setCountries]=useState([])
-  const[currentPage, setCurrentPage]=useState(1)
+  const[countries, setCountries] = useState([])
+  const[currentPage, setCurrentPage] = useState(1)
   let countriesPerPage = 10
 
   const[pageNumberLimit, setPageNumberLimit]=useState(5)
@@ -46,8 +46,8 @@ function Paginacion(){
       pages.push(i)
   }
 
-  let indexOfLastCountry= currentPage*countriesPerPage;
-  let indexOfFirstCountry= indexOfLastCountry - countriesPerPage;
+  let indexOfLastCountry = currentPage*countriesPerPage;
+  let indexOfFirstCountry = indexOfLastCountry - countriesPerPage;
   let currentCountries = countries.slice(indexOfFirstCountry,indexOfLastCountry)
 
   function handleClick(e){
@@ -107,9 +107,9 @@ function Paginacion(){
       <>
       <div id = "divPag">
       <ul className='pageNumbers'>
-        {currentPage>1?<li><button onClick={handlePrevBtn}> prev</button></li>:null}
+        {currentPage>1?<li><button className="pagButton1"  onClick={handlePrevBtn}> prev</button></li>:null}
           {renderPageNumber}
-      {currentPage<25?<li><button onClick={handleNextBtn}>next</button></li>:null}
+      {currentPage<25?<li><button className="pagButton2" onClick={handleNextBtn}>next</button></li>:null}
       </ul>
       {renderData(currentCountries)}
       </div>

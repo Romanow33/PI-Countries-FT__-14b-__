@@ -16,8 +16,8 @@
 }
 
 .container .countryCards{
-    width:330px;
-    height:430px;
+    width: 330px;
+    height: 430px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -34,7 +34,7 @@
 }
 
 .container .countryCards img{
-    width:330px;
+    width: 330px;
     height: 220px;
 }
 

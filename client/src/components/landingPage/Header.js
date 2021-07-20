@@ -11,27 +11,16 @@ export default function Header(){
     },[])
 
     return(
-        <div className='root'>
-        <div className="appbar" elevation={0}>
-            
+        <div class="hero-header">
+        <div class="header">
+        <h1>Hola Henry!</h1>
+        <h2>Henry Country!</h2>
+        <div class="btn btn-2"> <Link to='/countries'><span>Entrar</span></Link></div>
         </div>
-        <div className="contenedor">
-            <h1 className="tittle">Bienvenidos a </h1><br/><h1 className="tittle2">Country Henry App</h1> 
-            <Link to='/countries'>
-                
-                <div className="center-con">
-                <button className="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                </button>
-                </div> 
-            </Link>   
-            
-        </div>
+        <div class="body"></div>
+    </div>
         
-        </div>
     )
 
 }
+

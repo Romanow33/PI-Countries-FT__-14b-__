@@ -72,10 +72,10 @@
 }
 .button2{
     width: 80px;
-  height: 80px;
-  background: dodgerblue;
-  border-radius: 6px;
-  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+    height: 80px;
+    background: dodgerblue;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
 }
 
 .button svg {
