@@ -133,7 +133,7 @@ function AddTourism(props){
                 {
                     props.allCountries && props.allCountries.map((el) => {
                         
-                    return  <option key={el.id} value={el.countryCode}>{el.name}</option>
+                    return  <option key={el.id} value={el.countryCode}>{el.id}</option>
                     })
                 }
             </select>
