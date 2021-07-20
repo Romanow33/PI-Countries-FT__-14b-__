@@ -73,7 +73,7 @@ function AddTourism(props){
     function handleDificultad(e){setInput({...input, dificulty:e.target.value})} 
     function handleTime(e){setInput({...input, duration:e.target.value})} 
     function handleSeason(e){setInput({...input, season:e.target.value})} 
-    function handlePaises(e){console.log(e.target.value);setInput({...input, countryCode:input.countryCode.concat(e.target.value)})} 
+    function handlePaises(e){;setInput({...input, countryCode:input.countryCode.concat(e.target.value)})} 
 
     function resetCodeCountry(e){
         e.preventDefault()
@@ -129,11 +129,11 @@ function AddTourism(props){
             <label htmlFor='Paises'>Selecciona el Código de los Países a Agregar: </label><br></br>
             <button onClick={handleTourism}> trae Paises </button>
             <select id='Paises' onChange={handlePaises} value={input.countryCode} multiple={true} className={error.duration && 'warning'}>
-                    <option defaultValue>selecciona el código del país</option>
+                    
                 {
                     props.allCountries && props.allCountries.map((el) => {
                         
-                    return  <option key={el.id} value={el.id}>{el.id}</option>
+                    return  <option key={el.id} value={el.countryCode}>{el.name}</option>
                     })
                 }
             </select>

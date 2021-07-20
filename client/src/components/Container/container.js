@@ -12,8 +12,10 @@ function Container(props){
             <div key={el.id + 's'} className='countryCards'>
                 <img src={el.imageFlag} alt={el.name}></img>
 <h4 className='nombre'><Link to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link></h4> 
+                <label className='title'>Turismo</label><hr></hr>
                 <p>{el.continent}</p>
-                <p>{el.population}</p>
+                <label className='title'>Turism </label><hr></hr>
+                <label>{el.population}</label>
               
             </div>
 

@@ -34,7 +34,7 @@ const initialState = {
           ...state,
           /* countrySearched: state.allCountries.filter((country)=>{
             return country.continent.some((el)=> el.continent === action.continent)}) */ 
-           countrySearched: state.allCountries && state.allCountries.filter(country =>country.continent === action.continent) 
+          countrySearched: state.allCountries && state.allCountries.filter(country =>country.continent === action.continent) 
           }
       case SET_COUNTRIES_AZ:
         return{
@@ -72,7 +72,7 @@ const initialState = {
           return{
           ...state,
           countrySearched: state.allCountries.filter((country)=>{
-                          return country.activities.some((el)=> el.activities === action.activities)})   
+                          return country.activities.some((el)=> el.activities === action.activities)})
           }  
     default:
       return state;

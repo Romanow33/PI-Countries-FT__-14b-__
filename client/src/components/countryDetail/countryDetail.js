@@ -35,7 +35,7 @@ function CountryDetail(){
             <label className='title'>Área  </label>
             <label>{countryDetail.area}</label><br></br><hr></hr>
             <label className='title'>Turismo  </label><hr></hr>
-            <label>{countryDetail? (countryDetail.activities && countryDetail.activities.map(el=>(
+            <label>{countryDetail ? (countryDetail.activities && countryDetail.activities.map(el=>(
               <div key={el.id} className='activityCard'>
                 <label className='title' >Nombre Actividad: </label>
                 <label className='n'>{el.name}</label><br></br>

@@ -74,8 +74,19 @@ export function Busqueda(props){
         <button  onClick={handleSubmitName}>go</button><br/>
 
         <label>Por Continente </label>
-        <input name='continent' type='text' onChange={handleRegion}
-        value={countries.inputRegion} placeholder='¿Qué continente quieres ver?'></input> 
+      
+
+
+      <select className= "select" name='continent' onChange={handleRegion} 
+      value={countries.inputRegion}>
+                    <option value="">¿Qué continente quieres ver?</option>
+                    <option value="Europe">EUROPE</option>
+                    <option value="Americas">AMERICAS</option>
+                    <option value="Asia">ASIA</option>
+                    <option value="Africa">AFRICA</option>
+                    <option value="Oceania">OCEANIA</option>
+                    <option value="Polar">POLAR</option>
+                </select>
         <button onClick={handleSubmitRegion}>go</button><br/>
 
         <label>Por Tourismo</label>
@@ -118,7 +129,7 @@ function mapStateToProps(state) {
       setCountriesZA: () => dispatch(setCountriesZA()),
       setCountriesByInhabitansASC: () => dispatch(setCountriesByInhabitansASC()),
       setCountriesByInhabitansDESC: () => dispatch(setCountriesByInhabitansDESC()),
-      getByTourism: tourism => dispatch(getByTourism(tourism))
+      getByTourism: Activity => dispatch(getByTourism(Activity))
 
     };
   }

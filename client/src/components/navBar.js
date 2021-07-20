@@ -10,7 +10,7 @@ export default function NavBar(onSearch){
             <li className='list-item'>
               <NavLink  to='/countries'>HOME</NavLink>
               <NavLink  to='/activity'>Agrega Una Actividad</NavLink>
-              {/* <NavLink  to='/busqueda'>Haz una Busqueda</NavLink> */}
+            
             </li>
             
           </nav>

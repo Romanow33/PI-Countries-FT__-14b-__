@@ -15,8 +15,10 @@ function renderData(countries){
                 <div key={country.id} className='countryCards'>
                   <img src={country.imageFlag} alt={country.name}></img>
                   <h4 className='nombre'><Link to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link></h4>
-                  <p>{country.continent}</p>
-                  <p>{country.population}</p>
+                  <label className='title'> continente  </label>
+                  <p className='n'>{country.continent}</p>
+                  <label className='title'> Poblacion  </label>
+                  <p className='n'>{country.population}</p>
                 </div>
             )): <h2>Cargando...</h2>
             }
