@@ -10,7 +10,7 @@ function Container(props){
         { props.search && props.search.map( (el)=>(
           
             <div key={el.id + 's'} className='countryCards'>
-                <img src={el.imageFlag} alt={el.name}></img>
+                <img  src={el.imageFlag} alt={el.name}></img>
 <h4 className='nombre'><Link to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link></h4> 
                 <label className='title'>Turismo</label><hr></hr>
                 <p>{el.continent}</p>

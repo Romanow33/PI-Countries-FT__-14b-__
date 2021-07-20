@@ -11,13 +11,13 @@ export default function Header(){
     },[])
 
     return(
-        <div class="hero-header">
-        <div class="header">
+        <div className="hero-header">
+        <div className="header">
         <h1>Hola Henry!</h1>
         <h2>Henry Country!</h2>
-        <div class="btn btn-2"> <Link to='/countries'><span>Entrar</span></Link></div>
+        <div className="btn btn-2"> <Link to='/countries'><span>Entrar</span></Link></div>
         </div>
-        <div class="body"></div>
+        <div className="body"></div>
     </div>
         
     )
