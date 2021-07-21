@@ -27,7 +27,7 @@ router.post('/', async (req, res)=>{
           },
        }
     })
-   return res.json({Mensaje:'Se ha agregado con éxito la actividad', actividadCreada:find});
+   return res.json({Mensaje:'Se ha agregado con éxito la actividad', actividadCreada:find}).status(200);
         } catch (err){}
    
 })

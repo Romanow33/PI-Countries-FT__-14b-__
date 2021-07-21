@@ -11,14 +11,13 @@ import Busqueda from "./components/Search/search"
 function App() {
 
   return (
-    <div className="App">
+    <div className= "App">
       <Route exact path='/' component={LandingPage}/>
       <NavBar/>
       <Route exact path='/countries' component={Busqueda}/> 
       <Route exact path='/countries' component= {Pagination}/> 
       <Route exact path='/countries/:id' component={CountryDetail}/>
       <Route exact path='/activity' component={addActivity}/>
-      
     </div>
   );
 }
