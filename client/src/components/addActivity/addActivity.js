@@ -128,7 +128,7 @@ function AddTourism(props){
         <div>
             <label htmlFor='Paises'>Selecciona el Código de los Países a Agregar: </label><br></br>
             <button onClick={handleTourism}> trae Paises </button>
-            <select id='Paises' onChange={handlePaises} value={input.countryCode} multiple={true} className={error.duration && 'warning'}>
+            <select id='selePais' onChange={handlePaises} value={input.countryCode} multiple={true} className={error.duration && 'warning'}>
                     
                 {
                     props.allCountries && props.allCountries.map((el) => {

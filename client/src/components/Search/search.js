@@ -68,7 +68,7 @@ export function Busqueda(props){
   return(
     <>
     
-    <form className='form'><h1>Busca el país</h1><br></br>
+    <form className='form1'><h1>Busca el país</h1><br></br>
     <div className="firstForm">
         <label>Por Nombre </label>       
         <input name='name' type='text' onChange={handleName} value={countries.inputName} placeholder='¿Qué país quieres ver?'/>

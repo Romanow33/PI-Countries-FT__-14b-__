@@ -10,12 +10,12 @@ function Container(props){
         { props.search && props.search.map( (el)=>(
           
             <div key={el.id + 's'} className='countryCards'>
-                <img  src={el.imageFlag} alt={el.name}></img>
-<h4 className='nombre'><Link to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link></h4> 
-                <label className='title'>Turismo</label><hr></hr>
-                <p>{el.continent}</p>
-                <label className='title'>Turism </label><hr></hr>
-                <label>{el.population}</label>
+                <img className="imgFlag"  src={el.imageFlag} alt={el.name}></img>
+<Link className='title' to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link>
+                <label className='title2'>continente</label><hr></hr>
+                <p className="title3">{el.continent}</p>
+                <label className='title2'>Poblacion </label><hr></hr>
+                <p className="title3">{el.population}</p>
               
             </div>
 

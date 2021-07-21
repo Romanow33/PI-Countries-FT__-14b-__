@@ -18,7 +18,7 @@ function CountryDetail(){
 
     return(
       <>
-      {countryDetail? <h1 style={{ textTransform: 'uppercase'}}>{countryDetail.name}</h1>:<h1>No encontrado</h1>}
+      {countryDetail? <h1 className="deTitle" style={{ textTransform: 'uppercase'}}>{countryDetail.name}</h1>:<h1>No encontrado</h1>}
 
       {countryDetail=== {} && <h2>cargando...</h2>}
         {typeof countryDetail === 'object' && (<div className='details'>

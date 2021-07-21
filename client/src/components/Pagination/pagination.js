@@ -13,12 +13,12 @@ function renderData(countries){
             { 
             countries ? countries.map(country=>(
                 <div key={country.id} className='countryCards'>
-                  <img src={country.imageFlag} className='nombre' alt={country.name}></img>
-                  <h4 className='title'><Link to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link></h4>
-                  <label className='title'> continente  </label>
-                  <p className='title'>{country.continent}</p>
-                  <label className='title'> Poblacion  </label>
-                  <p className='title'>{country.population}</p>
+                  <img src={country.imageFlag} className='imgFlag' alt={country.name}></img>
+                <Link className="title" to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link><hr></hr>
+                  <label className='title2'> continente  </label>
+                  <p className='title3'>{country.continent}</p>
+                  <label className='title2'> Poblacion  </label>
+                  <p className='title3'>{country.population}</p><hr></hr>
                 </div>
             )): <h2>Cargando...</h2>
             }
