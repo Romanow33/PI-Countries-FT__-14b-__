@@ -1,9 +1,8 @@
 import { findCountries, getAllCountries, getByRegion, setCountriesAZ, setCountriesZA, setCountriesByInhabitansDESC, setCountriesByInhabitansASC, getByTourism } from "../../Actions/index";
 import {connect} from "react-redux";
 import React, {useState} from 'react';
-
 import "./search.css"
-import { Link } from 'react-router-dom';
+
 
 
 export function Busqueda(props){

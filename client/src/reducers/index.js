@@ -58,14 +58,14 @@ const initialState = {
         return{
           ...state,
           countrySearched: state.countrySearched.slice().sort(function(a,b){
-                        return a.population - b.population
+                        return Number(a.population/a.area - b.population/b.area)
           })
           }
       case SET_COUNTRIES_BY_INHABITANS_DESC:
           return{
           ...state,
           countrySearched: state.countrySearched.slice().sort(function(a,b){
-            return a.population - b.population
+            return  Number(a.population/a.area - b.population/b.area)
           }).reverse()
           }    
       case GET_BY_TOURISM:

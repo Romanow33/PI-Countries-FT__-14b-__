@@ -13,7 +13,7 @@ sequelize.define('activity', {
         allowNull:false
         },
     season:{
-        type: DataTypes.ENUM,// ENUM opciones cerradas para el usuario.
+        type: DataTypes.ENUM,
         values: ["summer", "autumn","winter","spring"],
         allowNull:false 
         },
