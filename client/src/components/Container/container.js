@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import {findCountries} from '../../Actions/index';
 import { Link } from 'react-router-dom';
+import  './container.css';
 
 
 function Container(props){
@@ -11,7 +12,7 @@ function Container(props){
           
             <div key={el.id + 's'} className='countryCards'>
                 <img className="imgFlag"  src={el.imageFlag} alt={el.name}></img>
-<Link className='title' to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link>
+<Link className='title' to={`/countries/${el.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{el.name}</Link><br></br>
                 <label className='title2'>continente</label><hr></hr>
                 <p className="title3">{el.continent}</p>
                 <label className='title2'>Poblacion </label><hr></hr>

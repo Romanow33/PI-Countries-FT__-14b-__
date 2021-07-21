@@ -13,7 +13,7 @@ function renderData(countries){
             { 
             countries ? countries.map(country=>(
                 <div key={country.id} className='countryCards'>
-                  <img src={country.imageFlag} className='imgFlag' alt={country.name}></img>
+                  <img src={country.imageFlag} className='imgFlag' alt={country.name}></img><br></br>
                 <Link className="title" to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link><hr></hr>
                   <label className='title2'> continente  </label>
                   <p className='title3'>{country.continent}</p>
