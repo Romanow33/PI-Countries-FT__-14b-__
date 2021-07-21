@@ -142,7 +142,7 @@ function AddTourism(props){
             </div>
             <div className='codigos'>{
                 input.countryCode && input.countryCode.map(el=>
-                    (<ul key={el}>{el}</ul>)
+                    (<ul className='codigos' key={el}>{el}</ul>)
                 )
                 }
             </div>

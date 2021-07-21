@@ -57,6 +57,10 @@ export function Busqueda(props){
     e.preventDefault()
     props.getAllCountries()
     props.getByTourism(countries.inputTourism)
+    let div = document.getElementById("divPag")
+    div.innerHTML = "" 
+    let divContainer = document.getElementById("paginationDiv")
+    divContainer.style.display = "block"
     
   } 
 
@@ -92,8 +96,6 @@ export function Busqueda(props){
         value={countries.inputTourism} placeholder='¿Qué actividad quieres hacer?'></input>
         <button className="button" onClick={handleByTourism}> go </button><br/>
         </div>
-        <button className="button2"><Link to={`/countries`} style={{ textDecoration: 'none', color:'#ffffa4'}}>Quitar filtros</Link></button>
-        
         <div className= 'formHijo'>Organiza tu Busqueda<br></br>
           <button className="button2" onClick={handleCountriesAZ}>Ordenar A/Z</button>
           <button className="button2" onClick={handleCountriesZA}>Ordenar Z/A</button>

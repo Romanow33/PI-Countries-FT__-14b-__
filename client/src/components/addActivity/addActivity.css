@@ -69,7 +69,8 @@ select.warning{
     height:30px;
     border-radius: 8px;
     display:inline;
-    margin:3px; 
+    margin: 5px;
+    margin-top: -40%;
     color:#f7f7ef;
     padding: 0.2rem;
     background: rgba(31, 155, 172, 0.5);
@@ -90,6 +91,9 @@ select.warning{
 select#selePais{
     margin-top:5%;
     margin-bottom: 0%;
+    width: 200px;
+    height: 50px;
+    margin-bottom: -2.5%;
 }
 
 
