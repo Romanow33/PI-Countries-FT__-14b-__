@@ -6,12 +6,12 @@
 .formAddTourism{
     width:600px;
     border-radius: 8px;
-    background:  rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(320deg, #427387 0, #40707f 6.25%, #406c77 12.5%, #40666d 18.75%, #416063 25%, #41595a 31.25%, #415150 37.5%, #414847 43.75%, #3f3f3f 50%, #3c3638 56.25%, #392e33 62.5%, #352630 68.75%, #30202d 75%, #2b1b2c 81.25%, #25172b 87.5%, #1f142b 93.75%, #18122c 100%);
     padding:30 px;
     margin:auto;
     margin-top: 10px;
-    font-family: 'Alegreya';
-    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(146, 143, 143);
     font-size: 20px;
     text-align: center;
 }
@@ -21,7 +21,7 @@
     padding: 5px;
 }
 .formAddTourism h2{
-    color:rgb(255, 255, 255);
+    color:rgb(187, 182, 182);
     display: block;
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -40,16 +40,12 @@
 .formAddTourism button{
     padding: 5px;
     margin-bottom: 30px;
-    font-family: 'Alegreya';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     margin: 3px;
 }
 
-.formAddTourism button:hover,
-.formAddTourism button:active{
-color:#fafafa;
-background: #003f8a;
-}
+
 
 .formAddTourism .submit{
     margin: 2rem;
@@ -95,5 +91,23 @@ select#selePais{
     height: 50px;
     margin-bottom: -2.5%;
 }
+
+.button1{
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+    background-size: 1px 200px;
+    transition: all .3s;    
+    border-radius: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    }
+    .button1:hover {
+        cursor: pointer;
+        width: 110px;
+        height: 90px;
+        background-position: 0 -100px;
+        transition: all .3s;
+        }
 
 

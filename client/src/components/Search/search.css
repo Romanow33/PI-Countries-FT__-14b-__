@@ -12,21 +12,21 @@ box-sizing: border-box;
 } */
 
 .form1{
+background-image: linear-gradient(320deg, #427387 0, #40707f 6.25%, #406c77 12.5%, #40666d 18.75%, #416063 25%, #41595a 31.25%, #415150 37.5%, #414847 43.75%, #3f3f3f 50%, #3c3638 56.25%, #392e33 62.5%, #352630 68.75%, #30202d 75%, #2b1b2c 81.25%, #25172b 87.5%, #1f142b 93.75%, #18122c 100%);
 border-radius: 8px;
-background:  rgba(0, 0, 0, 0.5);
 padding:30 px;
 margin:auto;
-margin-top: 1px;
-font-family: 'segoe ui';
+
+font-family: Georgia, 'Times New Roman', Times, serif;
 color: #efefef; 
 font-size: 15px;
 overflow: hidden;
+opacity: 0.8;
 }
 
 .firstForm{
 display: inline;
 position: relative;
-
 width: 100%;
 }
 
@@ -46,19 +46,16 @@ padding: 3px;
 border: 1px solid #001b3b;
 margin: 1px;
 }
+
 .form1 button{
 padding:3px;
-font-family: 'segoe ui';
+font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 15px;
 margin: 2px;
 opacity: 0.8;
 }
 
-.form1 button:hover,
-.form1 button:active{
-color:#efefef;
-background: green;
-}
+
 .form1 .formHijo{
 margin-bottom: 30px;
 padding-bottom: 20px;
@@ -67,30 +64,37 @@ padding-bottom: 20px;
 .button{
 width: 45px;
 height: 35px;
-background: dodgerblue;
-border-radius: 6px;
-transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
+background-size: 1px 100px;
+transition: all .3s;    
+border-radius: 20%;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.button:hover {
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    background-position: 0 -50px;
+        transition: all .3s;
+    }
+
 .button2{
 width: 80px;
 height: 80px;
 background: dodgerblue;
-border-radius: 6px;
-transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 100%, #ff9900 100%);
+background-size: 1px 100px;
+transition: all .3s;    
+border-radius: 20%;
 }
 
-.button svg {
-transform: rotate(180deg);
-transition: all .5s;
-background:green;
-}
+.button2:hover {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-position: 0 -0px;
+        transition: all .3s;
+    }
 
 
-.button:hover {
-cursor: pointer;
-width: 60px;
-height: 50px;
 
-border-radius: 50%;
-transform: rotate(-180deg);
-}

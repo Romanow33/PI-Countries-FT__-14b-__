@@ -26,8 +26,8 @@ describe("Activity routes", () => {
     })
   )
   beforeEach(() =>
-    Activity.sync({ force: true }).then(() => Activity.create({      name: "sky",
-    
+    Activity.sync({ force: true }).then(() => Activity.create({      
+    name: "sky",
     duration: "5",
     dificulty: "Alta",
     season: "summer"}))

@@ -14,11 +14,11 @@ function renderData(countries){
             countries ? countries.map(country=>(
                 <div key={country.id} className='countryCards'>
                   <img src={country.imageFlag} className='imgFlag' alt={country.name}></img><br></br>
-                <Link className="title" to={`/countries/${country.id}`} style={{ textDecoration: 'none', color:'#ffffa4'}}>{country.name}</Link><hr></hr>
-                  <label className='title2'> continente  </label>
-                  <p className='title3'>{country.continent}</p>
-                  <label className='title2'> Poblacion  </label>
-                  <p className='title3'>{country.population}</p><hr></hr>
+                    <Link className="title" to={`/countries/${country.id}`} style={{ textDecoration: 'none'}}>{country.name}</Link><hr></hr>
+                    <label className='title2'> continente  </label>
+                    <p className='title3'>{country.continent}</p>
+                    <label className='title2'> Poblacion  </label>
+                    <p className='title3'>{country.population}</p><hr></hr>
                 </div>
             )): <h2>Cargando...</h2>
             }
@@ -108,9 +108,9 @@ function Paginacion(){
       <>
       <div id = "divPag">
       <ul className='pageNumbers'>
-        {currentPage>1?<li><button className="pagButton1"  onClick={handlePrevBtn}> prev</button></li>:null}
+        {currentPage>1?<li><button className="pagButton"  onClick={handlePrevBtn}>prev</button></li>:null}
           {renderPageNumber}
-      {currentPage<25?<li><button className="pagButton2" onClick={handleNextBtn}>next</button></li>:null}
+        {currentPage<25?<li><button className="pagButton" onClick={handleNextBtn}>next</button></li>:null}
       </ul>
       {renderData(currentCountries)}
       </div>

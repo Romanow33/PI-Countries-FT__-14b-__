@@ -82,7 +82,7 @@ function AddTourism(props){
 
     return(
         <form onSubmit={submitForm} className='formAddTourism'>
-            <h2>Agrega la Actividad que quieres hacer</h2> <hr></hr>
+            <h2>falta alguna actividad, o encontraste una nueva? agregala!</h2> <hr></hr>
             <div>
             <label htmlFor='Nombre'> Nombre Actividad: </label>
             <input id='nombre' name = 'nombreActividad' type='text' required='required' onChange={handleName}
@@ -127,7 +127,7 @@ function AddTourism(props){
             </div>
         <div>
             <label htmlFor='Paises'>Selecciona el Código de los Países a Agregar: </label><br></br>
-            <button onClick={handleTourism}> trae Paises </button>
+            <button className='button1' onClick={handleTourism}> trae Paises </button>
             <select id='selePais' onChange={handlePaises} value={input.countryCode} multiple={true} className={error.duration && 'warning'}>
                     
                 {
@@ -137,7 +137,7 @@ function AddTourism(props){
                     })
                 }
             </select>
-            <button onClick={resetCodeCountry}>Borrar Paises Seleccionados</button><br></br>
+            <button className='button1' onClick={resetCodeCountry}>Borrar Paises Seleccionados</button><br></br>
             {error.countryCode && (<p className='warning'>{error.countryCode}</p>)}
             </div>
             <div className='codigos'>{
@@ -146,7 +146,7 @@ function AddTourism(props){
                 )
                 }
             </div>
-            <button type='submit'className='submit'> Agregar Actividad</button>
+            <button  type='submit' className='button1'> Agregar Actividad</button>
         </form>
     )
 }

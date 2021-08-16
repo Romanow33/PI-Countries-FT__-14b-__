@@ -4,28 +4,32 @@
   
   body {
     margin: 0px;
-    font-family: 'segoe ui';
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .nav {
+    background-image: linear-gradient(320deg, #427387 0, #40707f 6.25%, #406c77 12.5%, #40666d 18.75%, #416063 25%, #41595a 31.25%, #415150 37.5%, #414847 43.75%, #3f3f3f 50%, #3c3638 56.25%, #392e33 62.5%, #352630 68.75%, #30202d 75%, #2b1b2c 81.25%, #25172b 87.5%, #1f142b 93.75%, #18122c 100%);
     height: 50px;
     width: 100%;
-    background:  rgba(0, 0, 0, 0.5);
     position: relative;
-    opacity: 0.5;
+    opacity: 0.8;
+    
   }
   
   .nav > .nav-header {
     display: inline;
     
   }
+
   
   .nav > .nav-header > .nav-title {
+    -webkit-text-stroke: 1px rgb(218, 216, 216); 
     display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-top: 0.5%;
     margin-left: -25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .nav > .nav-btn {
@@ -43,10 +47,11 @@
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
   }
   
   .nav > #nav-check {
@@ -67,7 +72,7 @@
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0);
     }
     .nav > .nav-btn > label > span {
       display: block;
