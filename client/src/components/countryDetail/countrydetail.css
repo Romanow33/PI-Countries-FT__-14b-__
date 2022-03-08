@@ -1,55 +1,153 @@
-
-
-.deTitle{
-    font-family: 'Alegreya';
-    font-size: 40px;
-    margin:3px;
-    background:  rgba(224, 219, 219, 0.5);
-    border-color: rgb(54, 52, 52);
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
 }
-.details{
-    width:500px;
-    border-radius: 8px;
-    background:  rgba(0, 0, 0, 0.5);
-    padding:30 px;
-    margin:auto;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #6d6d61;
-    font-size: 30px;
-    
-    /* column-count: 2; */
+.deTitle {
+  letter-spacing: 2px;
+  color: #252b31;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+  padding: 20px;
 }
-
-.details img{
-    width:500px;
-    height: 220px;
-    
+.imgContainer {
+  perspective: 164px;
+  max-width: 20rem;
+  max-height: 20rem;
+  padding: 20px;
 }
-
-.details .title{
-    color: rgb(255, 255, 255);
-    margin:10px;
-}
-.details .activityCard{
-    width:400px;
-    border-radius: 8px;
-    padding:30 px;
-    margin:auto;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;;
-    color: #003f8a;
-    font-size: 2rem;
-    padding: 10px;
-    
+.infoContainer {
+  text-align: left;
+  width: 20rem;
+  height: 20rem;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.details .activityCard .n{
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+.infoContainer h1 {
+  font-size: 35px;
+  color: #252b31;
+  text-shadow: 3px 2px 3px #252b31;
+}
+.infoContainer label {
+  font-size: 30px;
+  margin-left: 20px;
+  color: #feab6b;
+  text-shadow: 3px 2px 3px #252b31;
 }
 
-.image{
-    width:10rem;
+.image {
+  box-shadow: -47px 51px 36px -29px rgba(0, 0, 0, 0.75);
+  transform: rotateX(0deg) rotateY(10deg);
+  transform-style: preserve-3d;
+  min-width: 20rem;
+  height: 15rem;
+  background-color: none;
+}
+
+.notAactivity {
+  letter-spacing: 2px;
+  color: #252b31;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  padding: 20px;
+}
+
+.notAactivityLink {
+  color: #feab6b;
+}
+.notAactivityLink:hover {
+  color: #c1c8c7;
+  text-shadow: 3px 2px 3px #252b31;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: -47px 51px 36px -29px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+table caption {
+  letter-spacing: 2px;
+  color: #252b31;
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+  padding: 20px;
+}
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+thead th,
+tfoot th {
+  font-family: "Lobster", cursive;
+  color: #c1c8c7;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
+tbody td {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+tfoot th {
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #c1c8c7;
+  color: #252b31;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #252b31;
+  color: #c1c8c7;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+table {
+  background-color: #252b31;
 }

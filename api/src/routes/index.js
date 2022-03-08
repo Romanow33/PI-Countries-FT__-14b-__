@@ -7,7 +7,7 @@ const fetch = require('node-fetch');
 const countries = require('./country');
 const activities  = require('./activity');
 const { Country } = require('../db');
-const url = ('https://restcountries.eu/rest/v2/all');
+const url = ('https://restcountries.com/v2/all');
 
 
 fetch(url).then( response => response.json() )

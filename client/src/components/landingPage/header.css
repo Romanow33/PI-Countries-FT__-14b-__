@@ -1,86 +1,99 @@
-@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji|Roboto';
-
-html, body {
-margin: 0;
-font-family: 'Roboto', sans-serif
-}
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 .hero-header {
-background-image: url("../../assets/tierra.gif");
-width: 100%;
-height: 100vh;
-text-align: center;
-background-size: cover;
-font-style: oblique;
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
 }
 
 .header {
-margin: 0 auto;
-padding-top:30vh;
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #252b319d;
 }
-
+.title {
+  margin: 0px;
+}
 .header h1 {
- -webkit-text-stroke: 1px rgb(218, 216, 216); 
- 
-letter-spacing: 5px;
-color: transparent;
-font-size: 80px;
-font-family: Georgia, 'Times New Roman', Times, serif, cursive;
-margin-left: -20%;
-
+  letter-spacing: 2px;
+  color: #c1c8c7;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  position: absolute;
 }
 
-
-.henry{
-color: #2C3E50;
-margin-left: -45%;
+.info{
+  letter-spacing: 3px;
+  color: #feab6b;
+  font-size: 40px;
+  opacity: 0;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.refTextExit {  
+  opacity: 1;
+  transition: opacity 2s;
+}
+/*** ESTILOS BOTÓN SLIDE TOP ***/
+.ov-btn-slide-top {
+  background: aliceblue; /* color de fondo */
+  color: #c1c8c7; /* color de fuente */
+  border-radius: 10000px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  top: 350px;
+  height: 80%;
+  width: 80%;
+  font-size: 10em;
+  border: none;
+}
+.ov-btn-slide-top:hover {
+  color: #feab6b; /* color de fuente hover */
+}
+.ov-btn-slide-top::after {
+  content: "";
+  background: #252b319d; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ov-btn-slide-top:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.55;
+  transition: all 0.55;
 }
 
-.btn {
-opacity: 0.5;
-height:50px;
-width:200px;
-display: inline-block;
-background-color: #2C3E50;
-margin:40px 20px;
-border-radius: 5px;
-border: 2px solid #ECF0F1;
-cursor:pointer;
-margin-left: -35%;
-margin-top: 1%;
+.footer {
+  font-size: 10em;
+  color: #c1c8c7;
+  position: relative;
+  top:400px;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+  border: none;
+  transition: linear;
 }
 
-.btn span {
-    -webkit-text-stroke: 2px rgb(218, 216, 216);
-    letter-spacing: 5px;
-    color: transparent;
-    font-size: 25;
-margin-top:15px;
-display: block;
-}
-
-.btn-1 {
-background-color: transparent;
-transition: all 300ms ease-in-out;
-}
-
-.btn-1:hover {
-    opacity: 1.0;
-background-color:#2C3E50;
-}
-
-.btn-2 {
-border-color: transparent;
-transition: all 300ms ease-in-out;
-}
-
-.btn-2:hover {
-    opacity: 1;
-border-color: #ECF0F1;
-}
-
-.body {
-width:100%;
-height:auto;
+.footer:hover {
+  background-color: #252b319d;
+  color: #feab6b;
+  border-radius: 10000px;
+  width: 50%;
 }

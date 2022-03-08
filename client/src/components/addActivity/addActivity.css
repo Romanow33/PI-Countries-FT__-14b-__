@@ -1,113 +1,180 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.formAddTourism{
-    width:600px;
-    border-radius: 8px;
-    background-image: linear-gradient(320deg, #427387 0, #40707f 6.25%, #406c77 12.5%, #40666d 18.75%, #416063 25%, #41595a 31.25%, #415150 37.5%, #414847 43.75%, #3f3f3f 50%, #3c3638 56.25%, #392e33 62.5%, #352630 68.75%, #30202d 75%, #2b1b2c 81.25%, #25172b 87.5%, #1f142b 93.75%, #18122c 100%);
-    padding:30 px;
-    margin:auto;
-    margin-top: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(146, 143, 143);
-    font-size: 20px;
-    text-align: center;
+.firstForm h2 {
+  font-family: "Roboto", sans-serif;
+  color: #c1c8c7;
+}
+.formAddTourism {
+  background-color: #252b31;
+  padding: 30px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  color: #c1c8c7;
+  font-size: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 20px 50px -15px rgba(0, 0, 0, 0.75);
+  margin-bottom: 100px;
 }
 
-.formAddTourism input{
-    margin: 10px;
-    padding: 5px;
-}
-.formAddTourism h2{
-    color:rgb(187, 182, 182);
-    display: block;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    width: 100%;
-    
+.firstForm {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-
-.formAddTourism select{
-    margin:10px;
-    padding: 5px;
-    width: 100px;
-    height: 30px;
+.formHijo {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-.formAddTourism button{
-    padding: 5px;
-    margin-bottom: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15px;
-    margin: 3px;
+.firstForm label {
+  padding: 10px;
+  font-size: 20px;
+  color: #feab6b;
+  font-family: "Roboto", sans-serif;
+}
+.formHijo label {
+  padding: 10px;
+  font-size: 20px;
+  color: #feab6b;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-.formAddTourism .submit{
-    margin: 2rem;
-    padding: 10px;
-    font-size: 20px;
+.firstForm input {
+  padding: 12px 30px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #feab6b;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
+  text-transform: uppercase;
+}
+::-webkit-input-placeholder {
+  color: #c1c8c7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.firstForm input:hover,
+.firstForm input:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
 }
 
-input.warning{
-    border:3px solid red;
+select {
+  padding: 12px 30px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #feab6b;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
 }
-select.warning{
-    border:3px solid red;
+select-select::placeholder {
+  color: #c1c8c7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
-
-.codigos ul{
-    width:50px;
-    height:30px;
-    border-radius: 8px;
-    display:inline;
-    margin: 5px;
-    margin-top: -40%;
-    color:#f7f7ef;
-    padding: 0.2rem;
-    background: rgba(31, 155, 172, 0.5);
-}
-
-.form{
-    width:400px;
-    border-radius: 8px;
-    background:  rgba(0, 0, 0, 0.5);
-    padding:30 px;
-    margin:auto;
-    margin-top: 100px;
-    font-family: 'Alegreya';
-    color: #ffffa4;
-    font-size: 20px;
-}
-
-select#selePais{
-    margin-top:5%;
-    margin-bottom: 0%;
-    width: 200px;
-    height: 50px;
-    margin-bottom: -2.5%;
+select:hover,
+select:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
 }
 
-.button1{
-    width: 100px;
-    height: 80px;
-    background: linear-gradient(180deg, #65bce8 0%, #306485 49%, #fbde74 50%, #ff9900 100%);
-    background-size: 1px 200px;
-    transition: all .3s;    
-    border-radius: 20%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
-    }
-    .button1:hover {
-        cursor: pointer;
-        width: 110px;
-        height: 90px;
-        background-position: 0 -100px;
-        transition: all .3s;
-        }
+.inputButtonConatiner {
+  width: 100%;
+  display: flex;
+}
+input.warning {
+  border: 3px solid red;
+}
+select.warning {
+  border: 3px solid red;
+}
 
+.buttonsForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.buttonsForm2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.formHijo button {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100px;
+  height: 50px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #1f2f47;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  box-shadow: inset 0px 0px 15px 3px #feab6b;
+  text-shadow: inset 0px 1px 0px #feab6b;
+  background: linear-gradient(#ca9973, #feab6b);
+  margin-left: 10px;
+}
 
+.formHijo button:hover {
+  background: linear-gradient(#feab6b, #ca9973);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.codigos ul {
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+  display: inline;
+  margin: 5px;
+  margin-top: -40%;
+  color: #f7f7ef;
+  padding: 0.2rem;
+  background: rgba(31, 155, 172, 0.5);
+}
