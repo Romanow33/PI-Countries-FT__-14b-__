@@ -37,13 +37,13 @@ try {
 });
 
 router.get("/all", async (req, res) => {
-let country = await Country.findAll({ include: [Activity] });
+const country = await Country.findAll({ include: [Activity] });
 return res.status(200).json(country);
 });
 
 router.get("/:id", async (req, res) => {
 try {
-    let country = await Country.findOne({
+    const country = await Country.findOne({
     where: {
         id: req.params.id,
     },

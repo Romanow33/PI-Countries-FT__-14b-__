@@ -14,7 +14,9 @@ export const GET_BY_TOURISM = "GET_BY_TOURISM";
 
 export function fetchCountries() {
   return async function (dispatch) {
-    const response = await fetch(`http://localhost:3001/countries?page=0`);
+    const response = await fetch(
+      `https://pi-countries--backend.herokuapp.com/countries?page=0`
+    );
     const json = await response.json();
     dispatch({
       type: GET_COUNTRIES,
@@ -26,7 +28,9 @@ export function fetchCountries() {
 export function fetchCountry(id) {
   return async function (dispatch) {
     try {
-      const response = await fetch(`http://localhost:3001/countries/${id}`);
+      const response = await fetch(
+        `https://pi-countries--backend.herokuapp.com/countries/${id}`
+      );
       const json = await response.json();
       dispatch({
         type: GET_COUNTRY_DETAIL,
@@ -49,7 +53,7 @@ export function clearCountry() {
 
 export function findCountries(name) {
   return function (dispatch) {
-    return fetch(`http://localhost:3001/countries?name=${name}`)
+    return fetch(`https://pi-countries--backend.herokuapp.com/countries?name=${name}`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({
@@ -62,7 +66,7 @@ export function findCountries(name) {
 
 export function getAllCountries() {
   return function (dispatch) {
-    return fetch(`http://localhost:3001/countries/all`)
+    return fetch(`https://pi-countries--backend.herokuapp.com/countries`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({

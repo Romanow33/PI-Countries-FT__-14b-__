@@ -90,7 +90,7 @@ function Paginacion() {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:3001/countries/all`)
+    fetch(`https://pi-countries--backend.herokuapp.com/countries`)
       .then((response) => response.json())
       .then((json) => setCountries(json));
   }, []);

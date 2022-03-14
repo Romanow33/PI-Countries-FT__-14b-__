@@ -7,16 +7,16 @@ const fetch = require('node-fetch');
 const countries = require('./country');
 const activities  = require('./activity');
 const { Country } = require('../db');
-const url = ('https://restcountries.com/v2/all');
+const url = ('https://restcountries.com/v3.1/all');
 
 
 fetch(url).then( response => response.json() )
-.then(data => data.map( c =>Country.create ({
-    id: c.alpha3Code,
-    name: c.name,
-    imageFlag: c.flag,
+.then(data => data.map( c => Country.create ({
+    id: c.cca3,
+    name: c.name.official,
+    imageFlag: c.flags.png,
     continent: c.region,
-    capital: c.capital,
+    capital: c.capital[0],
     subregion: c.subregion,
     area: c.area,
     population: c.population,
